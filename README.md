@@ -16,8 +16,8 @@ Design details of “Card Shuffler”
 
 •	Card shuffler is built using Java 8. Eclipse is used to build the code. 
 •	This project creates a small java package named testcardshuffler. It contains five 5 java classes in it. 
-•	GameCard - Interface
-•	PlayingCards and UnoCards - Classes that implement the Gamecard interface. Builds the types of cards currently supported by the program. 
+•	GameCardServices - Interface
+•	PlayingCardsServices and UnoCardsServices - Classes that implement the Gamecard interface. Builds the types of cards currently supported by the program. 
 •	CardsController – Acts as the class that controls the work flow. ( Accept and validate input, build cards, shuffle and return cards)
 •	CardApplication  - Runs the application.  Contains main() method to execute the program.
  
@@ -37,4 +37,3 @@ Known Issues:
 
 •	When the users enter a valid choice for the card type, P or U, and follows it up with multiple characters separated by white spaces, the program, raises and prints out a number format exception as it assumes the next value would represent the input, number of inputs.
 
-![image](https://user-images.githubusercontent.com/87593185/126056618-e038ec7e-369f-49dd-80f1-c263a1442afd.png)
