@@ -10,7 +10,7 @@ public class CardController {
 	private int numberOfDecks;
 	private String cardType;
 	private List<String> resultList = new ArrayList<String>();
-	private GameCard cardManager;
+	private CardServices cardManager;
 	Scanner in = new Scanner(System.in);
 
 	// Request user to enter type of card 
@@ -61,10 +61,10 @@ public class CardController {
 	// method from the respective classes.
 	public List<String> buildCards() {
 		if (cardType.equalsIgnoreCase("p")) {
-			cardManager = new PlayingCards();
+			cardManager = new PlayingCardsServices();
 			resultList = cardManager.buildDeckOfCards(numberOfDecks);
 		} else if (cardType.equalsIgnoreCase("u")) {
-			cardManager = new UnoCards();
+			cardManager = new UnoCardsServices();
 			resultList = cardManager.buildDeckOfCards(numberOfDecks);
 		}
 		return resultList;
